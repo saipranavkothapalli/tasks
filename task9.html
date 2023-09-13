@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+
+#container {
+            margin-left: 50px; /* Adjust the margin to create space */
+            display: flex;
+}
+    #mySidenav a{
+        position:absolute;
+        left:-80px;
+        transition:0.3s;
+        padding:15px;
+        width:100px;
+        text-decoration:none;
+        font-size:20px;
+        color:white;
+        border-radius:0 5px 5px 0;
+      }
+      #mySidenav a:hover{
+        left:0;
+      }
+      #TVSHOWS{
+        top:20px;
+        background-color:#04aa60;
+    
+      }
+      #About{
+        top:80px;
+        background-color:#2196F3;
+      }
+    
+    #Movies{
+        top:140px;
+        background-color:#F44336;
+    }
+    
+    #Mylist{
+        top:200px;
+        background-color:rgba(46, 24, 6, 0.616);
+    }
+    #content{
+        margin-left:100px;
+        padding:10px;
+        
+    }
+</style>
+    
+</head>
+
+
+<body>
+    <div id="container>">
+    <div id="mySidenav"class="sidenav">
+        <a href="#" id="TVSHOWS">Shows</a>
+        <a href="#" id="About">About</a>
+        <a href="#" id="Movies">Movies</a>
+        <a href="#" id="Mylist">My list</a>
+          </div>
+          <div id="content" >
+            <h1>Hoverable Sidenav Buttons</h1>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
